@@ -1,8 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.MoneyMaster" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MoneyMaster" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/black</item>
-        <item name="android:colorBackground">@color/background</item>
+        <item name="android:colorBackground">@color/white_grey</item>
+        <item name="colorSurface">@color/white</item>
     </style>
 
     <style name="Theme.MoneyMaster" parent="Base.Theme.MoneyMaster" />
+    <style name="roundedImage">
+        <item name="cornerSize">20dp</item>
+    </style>
 </resources>
