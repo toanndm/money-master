@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="40dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/violet"
+            android:src="@drawable/baseline_person_24"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUserName"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="@color/grey_text"
+            android:fontFamily="@font/inter"
+            app:layout_constraintStart_toEndOf="@id/imgAvatar"
+            app:layout_constraintTop_toTopOf="@id/imgAvatar"
+            app:layout_constraintBottom_toTopOf="@id/tvName"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvName"
+            android:text="Admin"
+            android:textSize="24sp"
+            android:textColor="@color/black_text"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter"
+            app:layout_constraintTop_toBottomOf="@id/tvUserName"
+            app:layout_constraintStart_toEndOf="@id/imgAvatar"
+            app:layout_constraintBottom_toBottomOf="@id/imgAvatar"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/baseline_edit_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvUserName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
